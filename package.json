@@ -1,14 +1,14 @@
 {
-  "name": "sadew-mini-md",
+  "name": "sula-md",
   "version": "1.0.0",
-  "description": "Sadew-Mini-MD WhatsApp Bot",
+  "description": "SULA-MD WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "baileys": "npm:baileys-dtz",
+    "baileys": "npm:@whiskeysockets/baileys@^6.6.0",
     "express": "^4.18.2",
     "fs-extra": "^11.2.0",
     "pino": "^8.17.0",
@@ -32,6 +32,7 @@
   "keywords": [
     "whatsapp",
     "bot",
+    "multi-device",
     "baileys"
   ],
   "author": "Sadew",
