@@ -23,5 +23,6 @@ jobs:
 
     - name: Start SADEW-MINI-MD
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 👈 මෙන්න මේ කෑල්ලෙන් Token එක බොට් එකට දෙනවා!
+        G_TOKEN: ${{ secrets.G_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
       run: node index.js
