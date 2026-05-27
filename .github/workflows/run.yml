@@ -22,4 +22,6 @@ jobs:
       run: npm install --legacy-peer-deps
 
     - name: Start SADEW-MINI-MD
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 👈 මෙන්න මේ කෑල්ලෙන් Token එක බොට් එකට දෙනවා!
       run: node index.js
