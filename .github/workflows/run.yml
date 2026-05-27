@@ -25,4 +25,7 @@ jobs:
       env:
         G_TOKEN: ${{ secrets.G_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
+        GITHUB_USERNAME: 'sadewrashmika13'  # 👈 උඹේ GitHub නම
+        OWNER_NAME: 'sadewrashmika13'       # 👈 බොට් සොයන පොදු විචල්‍යයන්
+        REPO_NAME: 'Sadew-mini'             # 👈 උඹේ රෙපෝ එකේ නම
       run: node index.js
