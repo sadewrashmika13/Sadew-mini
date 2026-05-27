@@ -25,7 +25,8 @@ jobs:
       env:
         G_TOKEN: ${{ secrets.G_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
-        GITHUB_USERNAME: 'sadewrashmika13'  # 👈 උඹේ GitHub නම
-        OWNER_NAME: 'sadewrashmika13'       # 👈 බොට් සොයන පොදු විචල්‍යයන්
-        REPO_NAME: 'Sadew-mini'             # 👈 උඹේ රෙපෝ එකේ නම
+        GH_TOKEN: ${{ secrets.G_TOKEN }}
+        GITHUB_USERNAME: ${{ github.actor }}          # 👈 GitHub එකෙන්ම ඔටෝ නම ගන්නවා
+        OWNER_NAME: ${{ github.repository_owner }}    # 👈 ඔටෝම අයිතිකාරයාගේ නම ගන්නවා
+        REPO_NAME: ${{ github.event.repository.name }} # 👈 රෙපෝ එකේ නම ඔටෝ ගන්නවා
       run: node index.js
